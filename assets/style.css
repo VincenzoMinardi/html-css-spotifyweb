@@ -1,0 +1,48 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* NAV */
+
+nav{
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    height: 100px;
+    background-color: red;
+}
+
+.btn-primary{
+    height: 40px;
+    width: 200px;
+    border-radius: 20px;
+    border: none;
+    margin-right: 1rem;
+}
+
+.bar-vertical{
+    position: absolute;
+    left: 0;
+    background-color: black;
+    height:180vh;
+    width: 200px;
+}
+
+main{
+    background-color: yellow;
+    height: 75vh;
+}
+
+footer{
+    background-color: blue;
+    height: 150px;
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    left: 0;
+   
+    
+}
+

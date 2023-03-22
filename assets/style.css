@@ -26,7 +26,6 @@ header {
 }
 
 .bar-vertical{
-    
     position: absolute;
     top: 0;
     left: 0;
@@ -41,7 +40,7 @@ main{
     overflow-y: auto;
     background-color: rgb(20, 25, 34);
     height: 82%;
-   width: 1720px;
+   width: calc(100% - 200px);
    position: absolute;
    left: 200px;
 }
@@ -49,7 +48,7 @@ main{
 ul{
     display: flex;
     justify-content: center;
-   list-style: none;
+    list-style: none;
 }
 
 .space-bar{
@@ -58,7 +57,9 @@ ul{
 }
 
 .flex{
+    margin: 1rem;
     display: flex;
+    gap: 1rem;
 }
 
 .cont-playlist{
@@ -67,18 +68,18 @@ ul{
 }
 
 .album{
-    padding-left: 1rem;
-    padding-top: 1rem;
     height: 200px;
 }
 
 .title-album,.text-below{
    text-align: center;
+   width: 210px;
 }
 
 .text-below{
     padding-top: 1rem;
 }
+
 
 
 

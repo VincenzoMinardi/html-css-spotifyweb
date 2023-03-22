@@ -39,10 +39,10 @@ header {
 main{
     overflow-y: auto;
     background-color: rgb(20, 25, 34);
-    height: 82%;
+    height: 90%;
    width: calc(100% - 200px);
-   position: absolute;
-   left: 200px;
+    position: absolute;
+   left: 200px; 
 }
 
 ul{
@@ -62,22 +62,25 @@ ul{
     gap: 1rem;
 }
 
+.img-playlist{
+   
+    flex-basis: calc(100% - 5rem / 6);
+}
+
 .cont-playlist{
     margin-top: 2rem;
     padding-left: 1rem;
 }
 
-.album{
-    height: 200px;
-}
+
 
 .title-album,.text-below{
    text-align: center;
-   width: 210px;
+   
 }
 
 .text-below{
-    padding-top: 1rem;
+   padding-top: 1rem;
 }
 
 

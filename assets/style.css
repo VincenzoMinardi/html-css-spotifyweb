@@ -132,6 +132,15 @@ ul li:hover{
     background-color: lightgray;
 }
 
+a{
+ color: rgb(116, 118, 123);
+ text-decoration: none;
+}
+
+ .name-playlist:hover,.position:hover,.text-color:hover,.text:hover{
+    background-color: lightgray;
+} 
+
 .color{
     text-decoration: none;
     color: rgb(116, 118, 123);
@@ -151,6 +160,16 @@ ul li:hover{
 
 .img-playlist{
    flex-basis: calc((100% - (5 * 1rem)) / 6);
+}
+
+.color-icon{
+    
+    color: white;
+    
+}
+
+.cont.img-icon{
+    
 }
 
 .album{

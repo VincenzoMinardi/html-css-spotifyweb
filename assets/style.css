@@ -128,18 +128,14 @@ ul{
     list-style: none;
 }
 
-ul li:hover{
-    background-color: lightgray;
+a:hover{
+    color: lightgray;
 }
 
 a{
  color: rgb(116, 118, 123);
  text-decoration: none;
 }
-
- .name-playlist:hover,.position:hover,.text-color:hover,.text:hover{
-    background-color: lightgray;
-} 
 
 .color{
     text-decoration: none;
@@ -162,15 +158,23 @@ a{
    flex-basis: calc((100% - (5 * 1rem)) / 6);
 }
 
+.cont-img-icon{
+    position: relative;
+}
+
 .color-icon{
-    
-    color: white;
+color: white;
+font-size: 70px;
+position: absolute;
+left: 95px;
+bottom: 100px;
+display: none;
+
+
     
 }
 
-.cont.img-icon{
-    
-}
+
 
 .album{
     width: 100%;

@@ -1,54 +1,57 @@
 *{
+    box-sizing: border-box;
     margin: 0;
     padding: 0;
-    box-sizing: border-box;
-    font-family: Arial, Helvetica, sans-serif;
+}
+
+body{
+    font-family: 'Montserrat', sans-serif;
+    height: 100vh;
 }
 
 /* HEADER */
-
-header {
+.high-bar{
     display: flex;
     justify-content: flex-end;
-    align-items: center;
-    height: 90px;
-    background-color: rgb(8, 11, 18);
-}
-
-.btn-primary {
-    background-color: rgb(8, 11, 18);
-    color: white;
-    height: 40px;
-    width: 200px;
-    margin-right: 1rem;
-    border-radius: 20px;
-    border: 1px solid white;
-}
-
-.bar-vertical{
     position: absolute;
     top: 0;
+    right: 0;
     left: 0;
-    padding-left: 1rem;
-    height: 100vh;
-    
-    background-color: black;
+   background-color: green;
+   height: 90px;
+  
 }
-/* MAIN */
 
-main{
-    overflow-y: auto;
-    background-color: rgb(20, 25, 34);
-    height: 90%;
-   width: calc(100% - 200px);
-    position: absolute;
-   left: 200px; 
+.contenitore{
+    display: flex;
 }
+
+.side-menù{
+    background-color: violet;
+    width: 20%;
+    height: calc(100vh - 100px);
+    z-index: 7;
+    
+}
+
+.menu-centrale{
+    padding-top: 6rem;
+    background-color: black;
+    overflow-y: auto;
+    height: calc(100vh - 100px);
+    width: 80%;
+}
+
+/* MAIN */
 
 ul{
     display: flex;
     justify-content: center;
     list-style: none;
+}
+
+.color{
+    color: rgb(116, 118, 123);
 }
 
 .space-bar{
@@ -59,12 +62,17 @@ ul{
 .flex{
     margin: 1rem;
     display: flex;
+    flex-wrap: wrap;
     gap: 1rem;
 }
 
 .img-playlist{
    
-    flex-basis: calc(100% - 5rem / 6);
+    flex-basis: calc((100% - (5 * 1rem)) / 6);
+}
+
+.album{
+    width: 100%;
 }
 
 .cont-playlist{
@@ -72,7 +80,10 @@ ul{
     padding-left: 1rem;
 }
 
-
+.title-bar, .title-playlist, .title-album{
+    color: white;
+   
+}
 
 .title-album,.text-below{
    text-align: center;
@@ -80,90 +91,51 @@ ul{
 }
 
 .text-below{
-   padding-top: 1rem;
+   padding-top: .5rem;
+   color: rgb(116, 118, 123);
 }
 
+/* Bar Vertical */
 
 
 
- /* NAV */
-nav{
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+ .nav-music{
     background-color: rgb(40, 40, 40);
-   position: absolute;
-   bottom: 0;
-   left: 0;
-   right: 0;
-  height: 80px;
-}
-
-.img-spotify{
-   margin-top: 1rem;
-    height: 50px;
-}
-
-.img-bar{
-    margin-top: 1.4rem;
-    height: 30px;
-}
-
-.text-bar{
-    position: relative;
-    bottom: 10px;
-    vertical-align: super;
-    font-size: 1.2rem;
-    color: white;
-}
-
-.color{
-   color: rgb(109, 109, 109); 
-}
-
-.title-bar, .title-playlist, .title-album{
-    color: white;
-    margin-top: 1rem;
-}
-
-.img-square{
-    height: 50px;
-    margin-top: .5rem;
-}
-
-.space{
-    margin-top: 1rem;
-}
-
-.cont-install-app{
-    padding-top: 16rem;
-}
-
-.img-download, .img-profile{
-   height: 25px;
-}
-
-.text-install{
-    display: inline-block;
-    margin-left: .5rem;
-    position: relative;
-    bottom: 2px;   
-}
-
-.line{
-    margin-top: 1rem;
-    width: 160px;
-    border-color: rgb(109, 109, 109);
-}
-
-.img-profile{
-    background-color: rgb(109, 109, 109);
-    border-radius: 10px;
-}
-
-.text-name{
-    position: relative;
-    bottom: 4px;
-    display: inline-block;
-    color: white;
-    margin-top: 3.2rem;
-}
-
-
+    height: 100px;
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    right: 0;
+ }

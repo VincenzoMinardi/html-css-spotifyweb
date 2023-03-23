@@ -13,36 +13,110 @@ body{
 .high-bar{
     display: flex;
     justify-content: flex-end;
+    align-items: center;
     position: absolute;
     top: 0;
     right: 0;
     left: 0;
-   background-color: green;
+   background-color:rgb(8, 11, 18);
    height: 90px;
-  
+}
+
+.btn-header{
+    background-color:rgb(8, 11, 18);
+    margin-right: 2rem;
+    height: 50px;
+    width: 200px;
+    border-radius: 50px;
+    border:1px solid white;
+}
+
+.link, .text, .title-side{
+    color: white;
+  text-decoration: none;
 }
 
 .contenitore{
     display: flex;
 }
-
+/* Side-menù */
 .side-menù{
-    background-color: violet;
-    width: 20%;
+    position: relative;
+    background-color: rgb(0, 0, 0);
+    width: 230px;
     height: calc(100vh - 100px);
     z-index: 7;
+    padding: 1rem;
+}
+
+.spotify{
+    height: 50px;
+}
+
+.size-img{
+    height: 35px;
+    margin-top: 1.5rem;
+}
+
+.text{
+    vertical-align: super;
+}
+
+.color-img, .text-color,.name-playlist{
+    color: rgb(116, 118, 123)
+}
+
+.title-side,.name-playlist{
+    margin-top: 1rem;
+}
+
+.big{
+    height: 45px;
+}
+
+.position{
+    position: relative;
+    bottom: 15px;
+}
+
+.cont-download-user{
+    position: absolute;
+    bottom: 60px;
+    
+}
+.small{
+    display: inline-block;
+    height: 20px;
+    
+}
+hr{
+    margin-left: .5rem;
+    margin-top: .7rem;
     
 }
 
-.menu-centrale{
-    padding-top: 6rem;
-    background-color: black;
-    overflow-y: auto;
-    height: calc(100vh - 100px);
-    width: 80%;
+.user-download{
+    position: absolute;
+    bottom: 10px;
 }
 
-/* MAIN */
+.user{
+  background-color: lightgray;
+   border-radius: 10px;
+}
+
+.color-name{
+    color: white;
+}
+
+/* Main-center */
+.main-center{
+    padding-top: 6rem;
+    background-color: rgb(20, 25, 34);
+    overflow-y: auto;
+    height: calc(100vh - 100px);
+    width: 90%;
+}
 
 ul{
     display: flex;
@@ -80,7 +154,7 @@ ul{
     padding-left: 1rem;
 }
 
-.title-bar, .title-playlist, .title-album{
+.title-bar, .title-playlist, .title-album, .name-user{
     color: white;
    
 }
@@ -95,7 +169,25 @@ ul{
    color: rgb(116, 118, 123);
 }
 
-/* Bar Vertical */
+.name-user{
+    margin-top: 2rem;
+    margin-bottom: .5rem;
+
+}
+
+
+.title-below{
+    padding-top: 1rem;
+    color: white;
+    text-align: center;
+}
+
+
+
+   
+
+
+
 
 
 

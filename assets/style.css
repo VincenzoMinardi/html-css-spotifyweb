@@ -163,15 +163,24 @@ a{
 }
 
 .color-icon{
-color: white;
-font-size: 70px;
-position: absolute;
-left: 95px;
-bottom: 100px;
-display: none;
+    color: white;
+    font-size: 70px;
+    position: absolute;
+    left: calc((100%  / 2) - 70px / 2);
+    bottom: calc((100% / 2) - 70px /2);
+}
 
+.icon{
+    width: 100%;
+    opacity: 0%;
+}
 
-    
+.icon:hover{
+    opacity: 90%;
+}
+
+.cont-img-icon:hover{
+    opacity: 40%;
 }
 
 
@@ -179,6 +188,9 @@ display: none;
 .album{
     width: 100%;
 }
+
+
+
 
 .cont-playlist{
     margin-top: 2rem;

@@ -124,6 +124,7 @@ hr{
 
 ul{
     display: flex;
+    flex-wrap: wrap;
     justify-content: center;
     list-style: none;
 }
@@ -172,16 +173,16 @@ a{
 
 .icon{
     font-size: 70px;
-    width: 100%;
+    /* width: 100%; */
     opacity: 0%;
 }
 
-.icon:hover{
-    opacity: 80%;
+.cont-img-icon:hover .album{
+    opacity: 40%;
 }
 
-.cont-img-icon:hover{
-    opacity: 40%;
+.cont-img-icon:hover .icon{
+    opacity: 100%;
 }
 
 .album{
@@ -231,6 +232,7 @@ footer{
     align-items: center;
      background-color: rgb(40, 40, 40); 
     height: 100px;
+    padding: 1rem;
     position: fixed;
     bottom: 0;
     left: 0;
@@ -294,18 +296,36 @@ footer{
     height: 6px;
     width: 55%;
     border-radius: 10px;
-    margin: auto;
     margin-bottom: 10px;
+    position: relative;
 }
- .bar-gray{
+
+.bar-gray{
     border-radius: 10px;
     height: 6px;
     width:30%;
-    background-color: whitesmoke
- }
+    background-color: whitesmoke;
+    position: relative;
+}
 
- .bar-gray:hover{
+.music-bar-center:hover .bar-gray{
     background-color: greenyellow;
+}
+
+.music-bar-center:hover .dot-center{
+    opacity: 100%;
+}
+
+
+ .dot-center{
+    opacity: 0;
+    height: 20px;
+    width: 20px;
+    border-radius: 20px;
+    background-color: white;
+    position: absolute;
+    left: 27%;
+    top: -100%;
  }
 
  /* PLAY-RIGHT */
@@ -317,12 +337,70 @@ footer{
     gap: 1rem;
  }
 
- .music-bar-right{
+.music-bar-right{
     background-color: rgb(116, 118, 123);
     height: 6px;
     width: 30%;
     border-radius: 10px;
+    position: relative;
+}
+
+.music-bar-right:hover .bar-gray{
+    background-color: greenyellow;
+}
+
+.music-bar-right:hover .dot-right{
+    opacity: 100%;
+}
+
+.dot-right{
+     opacity: 0; 
+    height: 20px;
+    width: 20px;
+    background-color: white;
+    position: absolute;
+    right: 0%;
+    top: -100%;
+    border-radius: 20px;
+}
+
+.flex-3{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.number{
+    margin-bottom: .5rem;
+    margin-inline: 1rem;
+    color: white;
+}
+
+/********RENSPONSIVE ********/
+
+@media (max-width:768px) {
+    .img-playlist{
+        max-width: 100%;
+        flex-basis: calc((100% - (3 * 1rem)) / 4);
+    }
+
+    footer{
+        max-width: 100%;
+        
+    }
     
- }
+}
+
+@media (max-width:540) {
+    .img-playlist{
+        max-width: 100%;
+        flex-basis: calc((100% - (1 * 1rem)) / 2);
+
+    }
+
+    footer{
+        max-width: 100%;
+    
+}
 
 

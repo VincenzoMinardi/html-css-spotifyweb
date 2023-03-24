@@ -57,6 +57,10 @@ body{
     height: 50px;
 }
 
+.img-small{
+    display: none;
+}
+
 .size-img{
     height: 35px;
     margin-top: 1.5rem;
@@ -156,11 +160,12 @@ a{
 }
 
 .img-playlist{
-   flex-basis: calc((100% - (5 * 1rem)) / 6);
+    flex-basis: calc((100% - (5 * 1rem)) / 6);
 }
 
 .cont-img-icon{
-    position: relative;
+    position: relative
+    
 }
 
 .color-icon{
@@ -386,21 +391,88 @@ footer{
 
     footer{
         max-width: 100%;
-        
     }
-    
 }
 
-@media (max-width:540) {
+@media (max-width:540px){
     .img-playlist{
         max-width: 100%;
         flex-basis: calc((100% - (1 * 1rem)) / 2);
-
     }
 
     footer{
         max-width: 100%;
-    
+    }
+
+    .icon-play{
+        
+        font-size: 15px
+    }
+
+    .circle-play{
+        font-size: 10px;
+    }
+
+    .flex-left img{
+        height: 0;
+    }
+
+    .flex-right{
+        flex-direction: column;
+    }
 }
+    
+    
+
+    
 
 
+
+
+
+
+
+@media (max-width: 480px){
+    .img-small{
+        display: block;
+    }
+    .spotify{
+        display: none;
+    }
+
+    .text{
+        display: none;
+    }
+
+    .text-color{
+        display: none;
+    }
+     .name-playlist{
+        display: none;
+     }
+
+     .big{
+        display: none;
+     }
+
+     .title-side{
+        display: none;
+     }
+
+     hr{
+        display: none;
+     }
+
+     .side-menù{
+        width: 65px;
+     }
+
+     .color-name{
+        display: none;
+     }
+
+     .small-user{
+        position: relative;
+        left: 2px;
+     }
+}

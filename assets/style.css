@@ -163,34 +163,30 @@ a{
 }
 
 .color-icon{
+   
     color: white;
-    font-size: 70px;
     position: absolute;
     left: calc((100%  / 2) - 70px / 2);
     bottom: calc((100% / 2) - 70px /2);
 }
 
 .icon{
+    font-size: 70px;
     width: 100%;
     opacity: 0%;
 }
 
 .icon:hover{
-    opacity: 90%;
+    opacity: 80%;
 }
 
 .cont-img-icon:hover{
     opacity: 40%;
 }
 
-
-
 .album{
     width: 100%;
 }
-
-
-
 
 .cont-playlist{
     margin-top: 2rem;
@@ -228,52 +224,105 @@ a{
     border-radius: 200px;
 }
 
-
-
-   
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
- .nav-music{
-    background-color: rgb(40, 40, 40);
+/* FOOTER */
+footer{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+     background-color: rgb(40, 40, 40); 
     height: 100px;
     position: fixed;
     bottom: 0;
     left: 0;
     right: 0;
+   
+    /* PLAY LEFT */
+}
+.play-left{
+    flex: 0 0 25%;
+ }  
+
+ .play-center{
+   flex: 0 0 50%;
  }
+
+ .play-right{
+    flex: 0 0 25%;
+ }
+
+ .flex-left{
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+ }
+
+ .flex-left img{
+    height: 70px;
+ }
+
+ .text-color-below{
+    color: rgb(116, 118, 123)
+ }
+
+ .spaced-icon{
+    padding-left: 1rem;
+    color: rgb(116, 118, 123)
+ }
+
+ /* PLAY CENTER */
+
+.flex-center{
+    display: flex;
+    justify-content: center;
+    align-items: baseline;
+    gap: 1rem;
+}
+.color-play{
+    color: white;
+}
+.icon-play{
+    height: 60px;
+    font-size: 25px
+}
+
+.circle-play{
+    font-size: 35px;
+}
+
+.music-bar-center {
+    background-color: rgb(116, 118, 123);
+    height: 6px;
+    width: 55%;
+    border-radius: 10px;
+    margin: auto;
+    margin-bottom: 10px;
+}
+ .bar-gray{
+    border-radius: 10px;
+    height: 6px;
+    width:30%;
+    background-color: whitesmoke
+ }
+
+ .bar-gray:hover{
+    background-color: greenyellow;
+ }
+
+ /* PLAY-RIGHT */
+ .flex-right{
+    display: flex;
+    justify-content: end;
+    align-items: center;
+    padding-right: .5rem;
+    gap: 1rem;
+ }
+
+ .music-bar-right{
+    background-color: rgb(116, 118, 123);
+    height: 6px;
+    width: 30%;
+    border-radius: 10px;
+    
+ }
+
+
